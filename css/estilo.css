@@ -1,0 +1,105 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Contenedores */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado y navegación */
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Sección de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-direction: column;
+    }
+}
+
